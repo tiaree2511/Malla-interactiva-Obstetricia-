@@ -1,6 +1,6 @@
 body {
   font-family: 'Segoe UI', sans-serif;
-  background-color: #fdfcff;
+  background-color: #f5f5fa;
   color: #333;
   padding: 20px;
   text-align: center;
@@ -13,7 +13,7 @@ h1 {
 
 .malla-grid {
   display: flex;
-  gap: 15px;
+  gap: 20px;
   overflow-x: auto;
   padding: 10px;
   justify-content: center;
@@ -23,11 +23,11 @@ h1 {
   display: flex;
   flex-direction: column;
   gap: 10px;
-  min-width: 230px;
+  min-width: 220px;
 }
 
 .semestre h2 {
-  background-color: #e0d7f3;
+  background-color: #e3d5f7;
   border-radius: 8px;
   padding: 5px;
   color: #4a3570;
@@ -36,32 +36,27 @@ h1 {
 .ramo {
   border: 2px solid #ccc;
   border-radius: 10px;
-  background-color: #ddd;
+  background-color: #ccc; /* bloqueado por defecto */
   padding: 10px;
-  transition: background-color 0.3s, border 0.3s, text-decoration 0.3s;
-  cursor: pointer;
   font-size: 14px;
+  cursor: not-allowed;
+  transition: background-color 0.3s, border 0.3s;
 }
 
 .ramo.desbloqueado {
-  background-color: #f3e8ff;
-  border-color: #b195d0;
+  background-color: #f0d8ff;
+  border-color: #c9a0e8;
+  cursor: pointer;
 }
 
 .ramo.aprobado {
   background-color: #a7e6e6;
   border-color: #5db5b5;
-  color: #4a4a4a;
   text-decoration: line-through;
   font-weight: bold;
+  color: #333;
 }
 
 .ramo h4 {
-  margin: 4px 0;
-  font-size: 14px;
-}
-
-.ramo small {
-  font-size: 11px;
-  color: #666;
-}
+  margin: 5px 0;
+  font
